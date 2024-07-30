@@ -8,12 +8,14 @@ local gameIds = {
 
 local solaraIds = {}
 
-if Exploit ~= "Solara" then
+if Exploit ~= "Solara" and Exploit ~= "Fluxus" then
     for i, id in gameIds do
         if i == tostring(game.GameId) then
             loadstring(game:HttpGet(id))()
         end
     end
-else
+elseif Exploit == "Solara" then
     game:GetService("Players").LocalPlayer:Kick("Yuna | Solara is not added yet.")
+elseif Exploit == "Fluxus" then
+    game:GetService("Players").LocalPlayer:Kick("Yuna | For mobile please use Codex or Arceus.")
 end
