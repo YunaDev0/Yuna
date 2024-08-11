@@ -8,7 +8,7 @@ local gameIds = {
 
 local solaraIds = {}
 
-if Exploit ~= "Solara" and Exploit ~= "Fluxus" then
+if (Exploit ~= "Solara" or game.GameId == 115797356) and Exploit ~= "Fluxus" then
     for i, id in gameIds do
         if i == tostring(game.GameId) then
             loadstring(game:HttpGet(id))()
