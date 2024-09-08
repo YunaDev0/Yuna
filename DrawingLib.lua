@@ -6,7 +6,7 @@ local Mouse  = Player:GetMouse()
 
 local UI = Instance.new("ScreenGui")
 UI.IgnoreGuiInset = true
-UI.Parent = Player.PlayerGui
+UI.Parent = game:GetService("CoreGui")
 
 local Drawing = {}
 Drawing.Fonts = {
