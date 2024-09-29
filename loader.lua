@@ -6,16 +6,15 @@ local gameIds = {
     ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua"
 }
 
-local solaraIds = {}
+local solaraIds = {
+    ["3150475059"] = "https://api.luarmor.net/files/v3/loaders/9292f827569f2535f2c40a0ba7c42deb.lua",
+    ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua"
+}
 
-if (Exploit ~= "Solara" or game.GameId == 3032132418) and Exploit ~= "Fluxus" then
-    for i, id in gameIds do
-        if i == tostring(game.GameId) then
-            loadstring(game:HttpGet(id))()
-        end
-    end
-elseif Exploit == "Solara" then
-    game:GetService("Players").LocalPlayer:Kick("Yuna | Solara is not added yet.")
+if Exploit == "Solara" then
+    loadstring(game:HttpGet(solaraIds[tostring(game.GameId)]))()
 elseif Exploit == "Fluxus" then
     game:GetService("Players").LocalPlayer:Kick("Yuna | For mobile please use Codex or Arceus.")
+elseif gameIds[tostring(game.GameId)] then
+    loadstring(game:HttpGet(gameIds[tostring(game.GameId)]))()
 end
