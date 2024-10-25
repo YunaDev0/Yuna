@@ -11,6 +11,11 @@ local solaraIds = {
     ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua"
 }
 
+if Exploit == "Nihon" then
+    game:GetService("Players").LocalPlayer:Kick("Yuna | Nihon is currently unable to support Yuna.")
+    return
+end
+
 if Exploit == "Solara" then
     loadstring(game:HttpGet(solaraIds[tostring(game.GameId)]))()
 elseif Exploit == "Fluxus" then
