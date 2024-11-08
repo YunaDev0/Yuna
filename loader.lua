@@ -12,8 +12,8 @@ local solaraIds = {
 }
 
 if Exploit == "Nihon" then
-    game:GetService("Players").LocalPlayer:Kick("Yuna | Nihon is currently unable to support Yuna.")
-    return
+    --game:GetService("Players").LocalPlayer:Kick("Yuna | Nihon is currently unable to support Yuna.")
+    --return
 end
 
 if Exploit == "Solara" then
