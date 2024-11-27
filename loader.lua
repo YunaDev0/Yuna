@@ -8,7 +8,7 @@ local gameIds = {
 
 local solaraIds = {
     ["3150475059"] = "https://api.luarmor.net/files/v3/loaders/9292f827569f2535f2c40a0ba7c42deb.lua",
-    ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua"
+    --["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua"
 }
 
 if Exploit == "Nihon" then
@@ -17,6 +17,10 @@ if Exploit == "Nihon" then
 end
 
 if Exploit == "Solara" then
+    if not solaraIds[tostring(game.GameId)] then
+        game:GetService("Players").LocalPlayer:Kick("Yuna | Solara is currently unable to support Yuna HCBB.")
+        return
+    end
     loadstring(game:HttpGet(solaraIds[tostring(game.GameId)]))()
 elseif Exploit == "Fluxus" then
     game:GetService("Players").LocalPlayer:Kick("Yuna | For mobile please use Codex or Arceus.")
