@@ -18,7 +18,7 @@ end
 
 if Exploit == "Solara" then
     if not solaraIds[tostring(game.GameId)] then
-        game:GetService("Players").LocalPlayer:Kick("Yuna | Solara is currently unable to support Yuna HCBB.")
+        game:GetService("Players").LocalPlayer:Kick("Yuna | Solara is currently unable to support this game.")
         return
     end
     loadstring(game:HttpGet(solaraIds[tostring(game.GameId)]))()
