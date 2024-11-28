@@ -1,9 +1,10 @@
 local Exploit = identifyexecutor()
 
 local gameIds = {
-    ["3150475059"] = "https://api.luarmor.net/files/v3/loaders/295c9f0edac4d95d36fb9defe521ca87.lua",
+    ["3150475059"] = "https://api.luarmor.net/files/v3/loaders/295c9f0edac4d95d36fb9defe521ca87.lua", -- FF2
     ["115797356"] = "https://api.luarmor.net/files/v3/loaders/b3f78af212d54a1d008b143aac4a86be.lua",
-    ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua"
+    ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua", -- HCBB
+    ["5750914919"] = "https://api.luarmor.net/files/v3/loaders/38b884e4a785b41d18f3313ccd0afd1f.lua", -- Fisch
 }
 
 local solaraIds = {
@@ -11,10 +12,10 @@ local solaraIds = {
     ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua" -- HCBB
 }
 
-if Exploit == "Nihon" then
+--if Exploit == "Nihon" then
     --game:GetService("Players").LocalPlayer:Kick("Yuna | Nihon is currently unable to support Yuna.")
     --return
-end
+--end
 
 if Exploit == "Solara" then
     if not solaraIds[tostring(game.GameId)] then
