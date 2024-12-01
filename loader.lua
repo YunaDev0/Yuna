@@ -5,6 +5,7 @@ local gameIds = {
     ["115797356"] = "https://api.luarmor.net/files/v3/loaders/b3f78af212d54a1d008b143aac4a86be.lua",
     ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua", -- HCBB
     ["5750914919"] = "https://api.luarmor.net/files/v3/loaders/38b884e4a785b41d18f3313ccd0afd1f.lua", -- Fisch
+    ["184199275"] = "https://api.luarmor.net/files/v3/loaders/a553b5c3e7ff1378e91c7f7af656fb98.lua", -- UF
 }
 
 local solaraIds = {
