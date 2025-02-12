@@ -20,7 +20,7 @@ local GameIDs = {
 local SolaraIDs = {
     ["3150475059"] = "https://api.luarmor.net/files/v3/loaders/9292f827569f2535f2c40a0ba7c42deb.lua", -- FF2
     ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua", -- HCBB
-    ["4931927012"] = "https://api.luarmor.net/files/v3/loaders/a5c68e2c4c37317805fb0ad5844d9153.lua", -- BL
+    ["4931927012"] = "https://api.luarmor.net/files/v3/loaders/31e7ebc8a688fbb6ce54e279fbe11685.lua", -- BL
 }
 
 local function Execute(IDs)
