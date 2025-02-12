@@ -14,6 +14,7 @@ local GameIDs = {
     ["3032132418"] = "https://api.luarmor.net/files/v3/loaders/b1cd6d05e9596d7b36b423139f5433e3.lua", -- HCBB
     ["5750914919"] = "https://api.luarmor.net/files/v3/loaders/38b884e4a785b41d18f3313ccd0afd1f.lua", -- Fisch
     ["184199275"] = "https://api.luarmor.net/files/v3/loaders/a553b5c3e7ff1378e91c7f7af656fb98.lua", -- UF
+    ["4931927012"] = "https://api.luarmor.net/files/v3/loaders/a5c68e2c4c37317805fb0ad5844d9153.lua", -- BL
 }
 
 local SolaraIDs = {
