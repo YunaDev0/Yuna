@@ -1,3 +1,4 @@
+return function(Pitch23)
 local v11 = {}
 v11.n__ = { "create", "writef64", "tostring" }
 
@@ -2826,3 +2827,4 @@ v11.n__ = { "create", "writef64", "tostring" }
 	end;
 
 return v11;
+end
