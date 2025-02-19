@@ -1,5 +1,4 @@
-return function(Pitch23)
-	print(Pitch23)
+local Pitch23 = getgenv().p23
 	local v11 = {}
 	v11.n__ = { "create", "writef64", "tostring" }
 
@@ -2828,4 +2827,3 @@ return function(Pitch23)
 	end;
 	warn("Returning v11")
 	return v11;
-end
