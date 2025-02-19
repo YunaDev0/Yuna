@@ -1,6 +1,7 @@
 return function(Pitch23)
-local v11 = {}
-v11.n__ = { "create", "writef64", "tostring" }
+	print(Pitch23)
+	local v11 = {}
+	v11.n__ = { "create", "writef64", "tostring" }
 
 	v1361 = function(v1948) --[[ Line: 9740 ]] --[[ Name: deepcopy ]]
 		-- upvalues: v1361 (copy)
@@ -2825,6 +2826,6 @@ v11.n__ = { "create", "writef64", "tostring" }
 			end
 		});
 	end;
-
-return v11;
+	warn("Returning v11")
+	return v11;
 end
