@@ -30,7 +30,7 @@ local function Execute(IDs)
 end
 
 -- // Key detection (more detailed kick message because LRM's is not that great)
-if not script_key then
+if not script_key and not getgenv().script_key then
     return Player:Kick("Yuna | Please make sure you include the script_key part ABOVE the loadstring, otherwise Luarmor will not be able to recognize that you bought.")
 end
 
