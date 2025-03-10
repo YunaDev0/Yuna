@@ -16,6 +16,7 @@ local GameIDs = {
     ["184199275"] = "https://api.luarmor.net/files/v3/loaders/a553b5c3e7ff1378e91c7f7af656fb98.lua", -- UF
     ["4931927012"] = "https://api.luarmor.net/files/v3/loaders/31e7ebc8a688fbb6ce54e279fbe11685.lua", -- BL
     ["6035872082"] = "https://api.luarmor.net/files/v3/loaders/5f9c4cf29d60aae7a0f464d3939cd753.lua", -- Rivals
+    ["4730278139"] = "https://api.luarmor.net/files/v3/loaders/ffc073d797e7bb0b9329ae48caed965b.lua",
 }
 
 local SolaraIDs = {
