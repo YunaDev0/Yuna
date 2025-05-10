@@ -19,7 +19,7 @@ local GameIDs = {
     ["4730278139"] = "https://api.luarmor.net/files/v3/loaders/ffc073d797e7bb0b9329ae48caed965b.lua", -- UBG
     ["6517184723"] = "https://api.luarmor.net/files/v3/loaders/8cdda091c86a0da8725caafc7e23dc43.lua", -- Basetball Universe
     ["6505338302"] = "https://api.luarmor.net/files/v3/loaders/2e2166a30d9c0b286e9b6e404e377302.lua", -- // Football Legends
-    ["6931042565"] = "Link soon", -- // Volleyball Legends
+    ["6931042565"] = "https://api.luarmor.net/files/v3/loaders/e3fe4d5e8022392eb2b6c8dbfa40f390.lua", -- // Volleyball Legends
 }
 
 local SolaraIDs = {
