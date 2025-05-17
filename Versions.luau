@@ -1,1 +1,1 @@
-return { Regular = 380, League = 150}
+return { Regular = 382, League = 150}
