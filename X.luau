@@ -1,6 +1,9 @@
 if not _G.Ran then 
     local PBann = game.ReplicatedStorage.RES.PBann
     for x,y in getconnections(game:GetService("LogService").MessageOut) do
+	if typeof(getfenv(y.Function).script) == 'table' then
+		continue
+	end
     	y:Disable()
     end
     _G.Ran = true
