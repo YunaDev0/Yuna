@@ -75,7 +75,7 @@ elseif Exploit == "Fluxus" then
     Player:Kick("Yuna | For mobile please use Codex or Arceus.")
 elseif GameIDs[tostring(GameID)] then
     if tostring(GameID) == "3032132418" then
-        loadstring("https://raw.githubusercontent.com/YunaDev0/Yuna/refs/heads/main/X.luau")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/YunaDev0/Yuna/refs/heads/main/X.luau"))()
     end
     Execute(GameIDs)
 end
