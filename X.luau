@@ -18,14 +18,6 @@ if not _G.Ran then
 			local args = {...}
 
 			local info = getinfo(3)
-			if typeof(args[1]) == 'buffer' then
-				local Example = "FEELEVEL5"
-				local Btecode= "\\"..table.concat({string.byte(buffer.tostring(args[1]), 1, #buffer.tostring(args[1]))}, "\\")
-				local Btecode2= "\\"..table.concat({string.byte(Example, 1, #Example)}, "\\").."\\0"
-				if Btecode == Btecode2 then
-					return Old(Self, ...)
-				end
-			end
             
 			if (info.currentline == 13523 or info.currentline == 19) then
 				return Old(Self, ...)
@@ -35,4 +27,5 @@ if not _G.Ran then
 	
 		return Old(Self, ...)
 	end))
+warn("Hooked")
 end
