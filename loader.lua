@@ -75,7 +75,63 @@ elseif Exploit == "Fluxus" then
     Player:Kick("Yuna | For mobile please use Codex or Arceus.")
 elseif GameIDs[tostring(GameID)] then
     if tostring(GameID) == "3032132418" then
-    getfenv().getgenv = nil
+        local __Debug = true
+        _G.Ran = true
+        
+        if not __Debug then
+        	getfenv().print = function() end 
+        	getfenv().warn = function() end
+        end
+        
+        for x,y in getconnections(game:GetService("LogService").MessageOut) do
+        	if __Debug and typeof(getfenv(y.Function).script) == 'table' then
+        		continue
+        	end
+        	y:Disable()
+        end
+        
+        local oldp; oldp = hookfunction(getrenv().print, newcclosure(function(a, ...)
+        	if a == "FEELEVEL" and not checkcaller() then
+        		return
+        	end
+        
+        	return oldp(a, ...)
+        end))
+        
+        getfenv().getgenv = nil
+        
+        local function ReverseConvert(buf)
+        	local len = buffer.len(buf)
+        	local out = buffer.create(len)
+        	for i = 0, len - 1 do
+        		local v = buffer.readi8(buf, i)
+        		buffer.writei8(out, i, -v)
+        	end
+        	return out
+        end
+        
+        warn(">> Blocking Ban Remotes")
+        local PBann = game.ReplicatedStorage.RES.PBann
+        if not _G.Ran then 
+        	local Old
+        	Old = hookmetamethod(game, "__namecall", newcclosure(function(Self, ...)
+        		if getnamecallmethod() == "FireServer" and ({...})[1] == "Incorrect context deep" then
+        			return
+        		end
+        	
+        		if getnamecallmethod() == "FireServer" and (Self.Name:find("R\204\180\204\136\204\177B\204\180\205\140\204\177KH\204\183\204\138\204\173\204\174") or Self == PBann) then
+        			local args = {...}
+        
+        			local info = getinfo(3)
+        			if (info.currentline == 13523 or info.currentline == 19) then
+        				return Old(Self, ...)
+        			end
+        			return
+        		end
+        	
+        		return Old(Self, ...)
+        	end))
+        end
     end
     Execute(GameIDs)
 end
