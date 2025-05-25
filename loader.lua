@@ -90,27 +90,7 @@ elseif GameIDs[tostring(GameID)] then
         	y:Disable()
         end
         
-        local oldp; oldp = hookfunction(getrenv().print, newcclosure(function(a, ...)
-        	if a == "FEELEVEL" and not checkcaller() then
-        		return
-        	end
-        
-        	return oldp(a, ...)
-        end))
-        
         getfenv().getgenv = nil
-        
-        local function ReverseConvert(buf)
-        	local len = buffer.len(buf)
-        	local out = buffer.create(len)
-        	for i = 0, len - 1 do
-        		local v = buffer.readi8(buf, i)
-        		buffer.writei8(out, i, -v)
-        	end
-        	return out
-        end
-        
-        warn(">> Blocking Ban Remotes")
         local PBann = game.ReplicatedStorage.RES.PBann
         if not _G.Ran then 
         	local Old
