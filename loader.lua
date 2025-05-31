@@ -82,40 +82,7 @@ elseif GameIDs[tostring(GameID)] then
         	y:Disable()
         end
         
-        local oldp; oldp = hookfunction(getrenv().print, newcclosure(function(a, ...)
-        	if a == "FEELEVEL" and not checkcaller() then
-        		return
-        	end
-        
-        	return oldp(a, ...)
-        end))
-        
         getfenv().getgenv = nil
-        
-        local PBann = game.ReplicatedStorage.RES.PBann
-        if not _G.Ran then
-        	_G.Ran = true
-        	local Old
-        	Old = hookmetamethod(game, "__namecall", newcclosure(function(Self, ...)
-        		if getnamecallmethod() == "FireServer" and ({...})[1] == "Incorrect context deep" then
-        			return
-        		end
-        
-        		if getnamecallmethod() == "FireServer" and (Self.Name:find("R\204\180\204\136\204\177B\204\180\205\140\204\177KH\204\183\204\138\204\173\204\174") or Self == PBann) then
-        			local args = {...}
-        
-        			local info = getinfo(3)
-        			if (info.currentline == 13523 or info.currentline == 19) then
-        				return Old(Self, ...)
-        			end
-        			return
-        		end
-        
-        		return Old(Self, ...)
-        	end))
-        
-        	--print("Bypass ran !")
-        end
     end
     Execute(GameIDs)
 end
