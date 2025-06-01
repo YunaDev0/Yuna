@@ -81,6 +81,10 @@ elseif GameIDs[tostring(GameID)] then
         	end
         	y:Disable()
         end
+
+        getgenv().getgenv = nil
+        getfenv().getgenv = nil
+        getgenv = nil
         
         getfenv().getgenv = nil
     end
