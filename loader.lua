@@ -85,8 +85,6 @@ elseif GameIDs[tostring(GameID)] then
         getgenv().getgenv = nil
         getfenv().getgenv = nil
         getgenv = nil
-        
-        getfenv().getgenv = nil
     end
     Execute(GameIDs)
 end
