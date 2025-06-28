@@ -66,9 +66,9 @@ end
 
 
 if table.find(Shitsploits, Exploit) then
-    if not SolaraIDs[tostring(GameID)] then
-        return Player:Kick(`Yuna | {Exploit} is not supported by Yuna.`)
-    end
+
+    return Player:Kick(`Yuna | {Exploit} is not supported by Yuna.`)
+
 
     --Execute(SolaraIDs)
 elseif Exploit == "Fluxus" then
