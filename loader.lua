@@ -67,12 +67,12 @@ end
 
 if table.find(Shitsploits, Exploit) then
     if not SolaraIDs[tostring(GameID)] then
-        return Player:Kick("Yuna | Solara is currently unable to support this game.")
+        return Player:Kick(`Yuna | {Exploit} is not supported by Yuna.`)
     end
 
-    Execute(SolaraIDs)
+    --Execute(SolaraIDs)
 elseif Exploit == "Fluxus" then
-    Player:Kick("Yuna | For mobile please use Codex or Arceus.")
+    Player:Kick("Yuna | For mobile please use Krnl.")
 elseif GameIDs[tostring(GameID)] then
     if tostring(GameID) == "3032132418" then
         for x, y in getconnections(game:GetService("LogService").MessageOut) do
