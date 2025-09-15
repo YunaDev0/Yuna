@@ -1,1 +1,1 @@
-6741
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YunaDev0/Yuna/refs/heads/main/BetaLoader"))()
