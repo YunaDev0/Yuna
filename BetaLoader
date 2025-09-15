@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/YunaDev0/Yuna/refs/heads/main/BetaLoader"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/db65d5bede4a8652398b0c2d55267627.lua"))()
