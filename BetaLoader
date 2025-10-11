@@ -21,9 +21,9 @@ local function Execute(IDs)
 end
 
 -- // Key detection (more detailed kick message because LRM's is not that great)
-if not script_key and not getgenv().script_key then
-    return Player:Kick("Yuna | Please make sure you include the script_key part ABOVE the loadstring, otherwise Luarmor will not be able to recognize that you bought.")
-end
+--if not script_key and not getgenv().script_key then
+--    return Player:Kick("Yuna | Please make sure you include the script_key part ABOVE the loadstring, otherwise Luarmor will not be able to recognize that you bought.")
+--end
 
 -- // LogService/ScriptContext error detection bypass
 if GameID == 3150475059 and not table.find(Shitsploits, Exploit) then
